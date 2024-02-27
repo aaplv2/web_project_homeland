@@ -11,10 +11,7 @@
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
-  padding: 0;
-  margin: 0;
-  width: 793px;
-  height: 200px;
+  margin: 90px 0 0;
 }
 
 .header__subtitle {
@@ -24,8 +21,6 @@
   line-height: 36px;
   padding: 0;
   margin: 32px 0 0;
-  width: 720px;
-  height: 72px;
 }
 
 .header__image {
