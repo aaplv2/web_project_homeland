@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px 0 0;
+}
+
+.header__title {
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+  width: 793px;
+  height: 200px;
+}
+
+.header__subtitle {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 30px;
+  line-height: 36px;
+  padding: 0;
+  margin: 32px 0 0;
+  width: 720px;
+  height: 72px;
+}
+
+.header__image {
+  margin-top: 64px;
+}
