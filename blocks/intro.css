@@ -1,8 +1,9 @@
 .intro {
   display: flex;
   flex-direction: column;
-  text-align: start;
-  margin: 92px 115px 0 148px;
+  align-self: center;
+  margin: 92px 0 0;
+  max-width: 1017px;
 }
 
 .intro__title {
@@ -14,10 +15,17 @@
 }
 
 .intro__content {
-  margin: 0 412px 0 0;
+  margin: 40px 295px 0 0;
 }
 
 .intro__quote {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 722px;
+}
+
+.intro__quote-text {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -30,7 +38,9 @@
   line-height: 34px;
   font-style: normal;
   letter-spacing: 0em;
-  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .intro__text {
@@ -39,5 +49,36 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
-  margin: 0;
+  margin: 42px 0 0;
+}
+
+@media screen and (max-width: 780px) {
+  .intro {
+    margin: 55px 24px 0;
+  }
+  .intro__content {
+    margin: 15px 0 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .intro {
+    margin: 44px 16px 0;
+  }
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .intro__content {
+    margin: 9px 0 0;
+  }
+  .intro__quote-text {
+    line-height: 30px;
+  }
+  .intro__quote-cite {
+    bottom: -30px;
+  }
+  .intro__text {
+    margin-top: 32px;
+  }
 }

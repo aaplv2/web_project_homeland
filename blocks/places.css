@@ -1,9 +1,9 @@
 .places {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 148px 0;
-  gap: 80px;
+  align-self: center;
+  margin: 92px 0 0;
+  max-width: 987px;
 }
 
 .places__card {
@@ -19,17 +19,13 @@
   gap: 48px;
 }
 
-.places__card-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .places__title {
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
   margin: 0;
+  max-width: 584px;
+  max-height: 152px;
 }
 .places__button {
   font-size: 18px;
@@ -42,6 +38,12 @@
 
   border-radius: 4px;
   gap: 10px;
+}
+
+.places__card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .artist__heading {
