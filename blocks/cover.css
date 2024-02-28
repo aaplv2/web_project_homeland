@@ -6,13 +6,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 92px 48px 0;
+}
+
+.cover:hover {
+  opacity: 0.3;
 }
 
 .cover__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
   gap: 32px;
+  padding: 243px 0;
 }
 
 .cover__title {
@@ -43,4 +51,38 @@
   height: 48px;
   background-color: #0278fe;
   color: white;
+}
+
+.cover__button:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 800px) {
+  .cover {
+    margin: 92px 0 0;
+  }
+
+  .cover__content {
+    padding: 246px 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .cover {
+    margin: 92px 0 0;
+  }
+
+  .cover__content {
+    padding: 46px 0;
+  }
+
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .cover__info {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
