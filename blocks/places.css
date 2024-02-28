@@ -30,6 +30,11 @@
   width: 584px;
 }
 
+.places__image {
+  max-width: 420px;
+  max-height: 420px;
+}
+
 .places__button {
   font-size: 18px;
   font-weight: 600;
