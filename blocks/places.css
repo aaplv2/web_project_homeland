@@ -19,12 +19,6 @@
   gap: 40px;
 }
 
-/* .places__card-left {
-  display: flex;
-  flex-direction: column;
-  width: 460px;
-} */
-
 .places__title {
   font-weight: 900;
   font-size: 72px;
@@ -52,13 +46,6 @@
   background-color: #0063d2;
 }
 
-/* .places__card-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 107px;
-} */
-
 .places__artist {
   display: flex;
   flex-direction: column;
@@ -72,17 +59,10 @@
   letter-spacing: 0.12em;
   color: #aaaaaa;
   margin: 0;
+  margin-bottom: 8px;
 }
 
-.artist__text-1 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  margin: 0;
-  margin-top: 8;
-}
-
-.artist__text-2 {
+.artist__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -96,13 +76,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
+  grid-area: places__text;
 }
 
-.places__text-1 {
-  margin: 0;
+.places__paragraph {
+  margin-top: 0;
 }
 
-.places__text-2 {
+.places__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
@@ -115,12 +96,13 @@
   .places__card {
     grid-template-columns: 340px 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "places__title places__artist"
+      "places__image places__text"
+      "places__button places__text"
+      ". places__text";
     gap: 28px;
   }
-
-  /* .places__card-left {
-    max-width: 352px;
-  } */
 
   .places__title {
     font-size: 42px;
@@ -135,32 +117,29 @@
     max-width: 340px;
   }
 
-  /* .places__card-right {
-    max-width: 332px;
-    margin-top: 0;
-  } */
-
   .places__text {
     font-size: 16px;
     line-height: 26px;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 700px) {
+  .places {
+    margin-top: 62px;
+    gap: 16px;
+  }
   .places__card {
     grid-template-columns: 320px;
     grid-template-rows: auto;
-    gap: 36px;
+    grid-template-areas:
+      "places__title"
+      "places__artis"
+      "places__image"
+      "places__text"
+      "places__button";
+    gap: 30px;
     max-width: 320px;
   }
-
-  /* .places__card-left {
-    max-width: 320px;
-  } */
-
-  /* .places__card-right {
-    max-width: 288px;
-  } */
 
   .places__title {
     font-size: 32px;
